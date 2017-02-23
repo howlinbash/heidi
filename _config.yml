@@ -1,10 +1,10 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:         kramdown
+highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
+#relative_permalinks: true
 
 # Setup
 title:            Hyde
@@ -22,5 +22,10 @@ paginate:         5
 # Custom vars
 version:          2.1.0
 
-github:
-  repo:           https://github.com/poole/hyde
+gitlab:
+  repo:           https://gitlab.com/howlinbash/hyde
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+  - redcarpet
