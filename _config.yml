@@ -12,7 +12,7 @@ exclude:
 - LICENSE
 - CNAME
 - Gemfile.lock
-- howltest1.gemspec
+- jekyll-theme-heidi.gemspec
 
 # 2. Installed Gems
 gems:
@@ -37,11 +37,11 @@ timezone:         Europe/London # Timezone for blog posts and alike
 
 # 5. Site settings
 encoding:         utf-8 # Make sure the encoding is right
-title:            "Hyde" # Site name or title, also used in jekyll-seo-tag
+title:            "Heidi" # Site name or title, also used in jekyll-seo-tag
 tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Based on Hyde by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>. Developed by <a href="https://twitter.com/howlinbash" target="_blank">@howlinbash</a>.'
 url:              http://hyde.getpoole.com
-repo:             https://gitlab.com/howlinbash/hyde
+repo:             https://gitlab.com/howlinbash/heidi
 
 # 6. Site navigation
 baseurl:          /
