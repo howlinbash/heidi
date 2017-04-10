@@ -91,8 +91,9 @@ repo:           https://gitlab.com/howlinbash/hyde
 # avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
 # 8. Site navigation
-navigation_header:
-  Home: /
+baseurl:          /
+# navigation_header:
+#   Home: /
 #   Elements: /elements/
 #   Blog: /blog/
 #   Categories: /categories/
@@ -126,7 +127,6 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-# baseurl:          /
 
 # Custom vars
 # version:          2.1.0
