@@ -1,31 +1,132 @@
-# Dependencies
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Site navigation
+
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- LICENSE
+- CNAME
+# - Gemfile
+- Gemfile.lock
+- junk/*
+- howltest1.gemspec
+
+# 2. Installed Gems
+gems:
+- jekyll-paginate
+- jekyll-gist
+- redcarpet
+
+# 3. Gem settings
+paginate: 3 # jekyll-paginate > items per page
+# paginate_path: blog/page:num # jekyll-paginate > blog page
+# jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+# twitter:
+#   username: DavidDarnes # jekyll-seo-tag > Owners twitter username
+# social: # jekyll-seo-tag > social overrides
+author:
+# howlinbash # jekyll-seo-tag > default author
+  name: Howlin Bash # jekyll-seo-tag > real name
+#  links:  # jekyll-seo-tag > social aliases (sameAs)
+#    - https://twitter.com/DavidDarnes
+#    - https://www.facebook.com/daviddarnes
+#    - https://www.linkedin.com/in/daviddarnes
+#    - https://plus.google.com/+DavidDarnes
+#    - https://github.com/daviddarnes
+  url:            https://howlin.io
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+#relative_permalinks: true
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/London # Timezone for blog posts and alike
+
+# # 5. Collections
+# collections:
+#   posts:
+#     title: Posts # Needed for Siteleaf
+#     output: true
+#     description: "My thoughts and ideas" # The post list page content
+#     feature_text: |
+#       Welcome to the blog
+#     feature_image: "https://unsplash.it/1300/400?image=1067"
+# 
+# # 6. Jekyll collections settings
+# defaults:
+#   -
+#     scope:
+#       path: ""
+#       type: pages
+#     values:
+#       layout: page # Default layout
+#       image: "/assets/placeholder-social.png" # Default image for sharing
+#   -
+#     scope:
+#       path: ""
+#       type: posts
+#     values:
+#       layout: post # Default layout
+#       image: "/assets/placeholder-social.png" # Default image for sharing
+
+
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+title: "Hyde" # Site name or title, also used in jekyll-seo-tag
+tagline:          'A Jekyll theme'
+# logo: "/assets/placeholder-logo.svg" # Site logo, also used in jekyll-seo-tag
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://hyde.getpoole.com
+repo:           https://gitlab.com/howlinbash/hyde
+# email: "me@daviddarnes.com"
+# disqus: "alembic-1"
+# avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
+
+# 8. Site navigation
+navigation_header:
+  Home: /
+#   Elements: /elements/
+#   Blog: /blog/
+#   Categories: /categories/
+#   Search: /search/
+#   Fork Alembic: https://github.com/daviddarnes/alembic
+# 
+# navigation_footer:
+#   Created by David Darnes: https://darn.es
+# 
+# social_links:
+#   Twitter: https://twitter.com/DavidDarnes
+#   LinkedIn: https://www.linkedin.com/in/daviddarnes
+#   Google+: https://plus.google.com/+DavidDarnes
+#   GitHub: https://github.com/daviddarnes
+#   link: https://darn.es
+# 
+# sharing_links:
+#   Twitter: "#1DA1F2"
+#   facebook: "#3B5998"
+#   Google+: "#DC4E41"
+#   Pinterest: "#BD081C"
+#   LinkedIn: "#0077B5"
+#   tumblr: "#36465D"
+#   Reddit: "#FF4500"
+#   Hacker News: "#ff6600"
+#   Designer News: "#2D72D9"
+#   Email: ""
+
+# Old _config left over
 markdown:         kramdown
 highlighter:      rouge
 
-# Permalinks
-permalink:        pretty
-#relative_permalinks: true
-
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
-
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
-
-paginate:         5
+# baseurl:          /
 
 # Custom vars
-version:          2.1.0
-
-gitlab:
-  repo:           https://gitlab.com/howlinbash/hyde
-# Gems
-gems:
-  - jekyll-paginate
-  - jekyll-gist
-  - redcarpet
+# version:          2.1.0
