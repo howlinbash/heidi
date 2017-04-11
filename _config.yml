@@ -11,8 +11,10 @@ exclude:
 - README.md
 - LICENSE
 - CNAME
+- Gemfile
 - Gemfile.lock
-- jekyll-theme-heidi.gemspec
+- Guardfile
+- jekyll-theme-heidi*
 
 # 2. Installed Gems
 gems:
