@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-heidi"
-  spec.version       = "0.1.0"
+  spec.version = "2.0.1"
   spec.authors       = ["Mark Otto", "Howlin Bash"]
-  spec.email         = ["howlin-bash@posteo.de"]
+  spec.email         = ["howlinbash@posteo.de"]
 
   spec.summary       = %q{Heidi is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.}
   spec.description   = "Heidi is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content. Based on Hyde by @mdo. Developed by Howlin Bash"
