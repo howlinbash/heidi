@@ -13,8 +13,7 @@
 
     <li>
       <a href="{{ url }}">
-        <span class="{{ data_social.icon }}" title="{{ data_social.name }}"></span>
-        <span class="sr-only">{% include {{icon}} %}</span>
+        <span class="social-button" id="{{ data_social.icon }}" title="{{ data_social.name }}">{% include {{icon}} %}</span>
       </a>
     </li>
   {% endfor %}
