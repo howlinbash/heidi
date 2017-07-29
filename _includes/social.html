@@ -1,0 +1,20 @@
+<ul>
+  {% for link in include.social %}
+    {% assign platform = link.first | downcase %}
+    {% assign username = link.last %}
+    {% assign data_social = site.data.social[platform] %}
+    {% assign icon = data_social.icon | append:".html" | prepend:"icons/" %}
+
+    {% if username contains "//" %}
+      {% assign url = username %}
+    {% else %}
+      {% assign url = username | prepend:data_social.prepend %}
+    {% endif %}
+
+    <li>
+      <a href="{{ url }}">
+        <span class="social-button" id="{{ data_social.icon }}" title="{{ data_social.name }}">{% include {{icon}} %}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

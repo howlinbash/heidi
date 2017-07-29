@@ -31,7 +31,16 @@
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
+    
+    {% assign author = site.data.authors.first[1] %}
+    {% if author.social %}
+      <div class="sidebar-social">
+        {% include social.html social=author.social %}
+      </div>
+    {% endif %}
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <div class="sidebar-copyright">
+      <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    </div>
   </div>
 </div>
