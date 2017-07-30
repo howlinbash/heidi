@@ -22,36 +22,21 @@
 .sidebar {
   background: center / cover;
 }
-
-.sidebar-social {
-    list-style-type: none;
-}
-
 .sidebar-social ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 .sidebar-social li {
     display: inline-block;
-    /**/
 }
-
-.sidebar-social li a {
-    display: block;
-}
-
 .social-button svg {
    height: 32px;
    width: 32px;
 }
-
 #icon-mail svg {
     height: 32px;
     width: 40px;
 }
-
 .social-button path {
     fill: #FFFFFF;
 }
