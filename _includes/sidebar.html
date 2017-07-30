@@ -1,4 +1,4 @@
-<div class="sidebar">
+<div class="sidebar" style="background-color:{{ site.color }};background-image:url({{ site.image }})">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
@@ -30,15 +30,15 @@
       <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+      {% assign author = site.data.authors.first[1] %}
+      {% if author.social %}
+        <div class="sidebar-social">
+          {% include social.html social=author.social %}
+        </div>
+      {% endif %}
+
     </nav>
     
-    {% assign author = site.data.authors.first[1] %}
-    {% if author.social %}
-      <div class="sidebar-social">
-        {% include social.html social=author.social %}
-      </div>
-    {% endif %}
-
     <div class="sidebar-copyright">
       <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
     </div>
