@@ -5,7 +5,7 @@
 # 4. Jekyll settings
 # 5. Site settings
 # 6. Site navigation
-# 7. Cusrom vars
+# 7. Custom vars
 
 # 1. Files excluded from Jekyll builds
 exclude:
@@ -55,7 +55,7 @@ description:      'A brazen two-column <a href="http://jekyllrb.com" target="_bl
 baseurl:          /
 
 # 7. Custom vars
-version:          2.0.1
+version:          2.0.3
 
 github:
   repo:           https://github.com/howlinbash/heidi
