@@ -5,7 +5,7 @@
 # 4. Jekyll settings
 # 5. Site settings
 # 6. Site navigation
-# 7. Cusrom vars
+# 7. Custom vars
 
 # 1. Files excluded from Jekyll builds
 exclude:
@@ -47,7 +47,7 @@ timezone:         Europe/London # Timezone for blog posts and alike
 
 # 5. Site settings
 encoding:         utf-8 # Make sure the encoding is right
-title:            "Howlin Bash" # Site name or title, also used in jekyll-seo-tag
+title:            "Heidi" # Site name or title, also used in jekyll-seo-tag
 tagline:          'A Jekyll theme'
 description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Based on Hyde by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>. Developed by <a href="https://twitter.com/howlinbash" target="_blank">@howlinbash</a>.'
 
@@ -55,7 +55,10 @@ description:      'A brazen two-column <a href="http://jekyllrb.com" target="_bl
 baseurl:          /
 
 # 7. Custom vars
-version:          2.0.1
+version:          2.0.3
 
 github:
   repo:           https://github.com/howlinbash/heidi
+
+image: /assets/img/cat.jpg
+color: '#223A3A'

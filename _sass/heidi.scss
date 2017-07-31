@@ -13,64 +13,37 @@
 
 
 /*
- * Contents
- *
- * Global resets
- * Sidebar
- * Container
- * Reverse layout
- * Themes
- */
-
-
-/*
- * Global resets
- *
- * Update the foundational and global aspects of the page.
- */
-
-/*
  * Sidebar
  *
  * Flexible banner for housing site name, intro, and "footer" content. Starts
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
-.sidebar-social {
-    list-style-type: none;
+.sidebar {
+  background: center / cover;
 }
-
+.sidebar-social {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .sidebar-social ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 .sidebar-social li {
     display: inline-block;
-    /**/
 }
-
-.sidebar-social li a {
-    display: block;
-}
-
 .social-button svg {
    height: 32px;
    width: 32px;
 }
-
 #icon-mail svg {
     height: 32px;
     width: 40px;
 }
-
 .social-button path {
     fill: #FFFFFF;
 }
-
-/*
-.sidebar-copyright {
-    float: left;
+.social-button:hover path {
+    fill: #808080;
 }
-*/
