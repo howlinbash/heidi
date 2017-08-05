@@ -55,10 +55,11 @@ description:      'A brazen two-column <a href="http://jekyllrb.com" target="_bl
 baseurl:          /
 
 # 7. Custom vars
-version:          2.0.3
+version:          3.0.0
 
 github:
   repo:           https://github.com/howlinbash/heidi
 
 image: /assets/img/cat.jpg
 color: '#223A3A'
+logo: # Add path to logo
