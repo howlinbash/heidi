@@ -20,30 +20,47 @@
  */
 
 .sidebar {
-  background: center / cover;
+    background: center / cover;
+
+    .lead {
+        color: #fff;
+    }
+
+    p.lead {
+        margin-top: 20px;
+    }
 }
+
 .sidebar-social {
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 10px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+    }
 }
-.sidebar-social ul {
-    margin: 0;
-    padding: 0;
+
+.social-button {
+    svg {
+       height: 32px;
+       width: 32px;
+    }
+ 
+    path {
+        fill: #FFFFFF;
+    }
+
+    :hover path {
+        fill: #808080;
+    }
 }
-.sidebar-social li {
-    display: inline-block;
-}
-.social-button svg {
-   height: 32px;
-   width: 32px;
-}
+
 #icon-mail svg {
     height: 32px;
     width: 40px;
-}
-.social-button path {
-    fill: #FFFFFF;
-}
-.social-button:hover path {
-    fill: #808080;
 }
