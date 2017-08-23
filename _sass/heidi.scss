@@ -67,3 +67,10 @@ body {
     height: 32px;
     width: 40px;
 }
+
+@media (min-height: 786px) {
+    .homepage {
+        position: absolute;
+        bottom: 3rem;
+    } 
+} 
